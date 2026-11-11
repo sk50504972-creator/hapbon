@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>합본 검수</title>
+<style>html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#fff}iframe{border:0;width:100%;height:100%;display:block}</style>
+</head><body>
+<iframe id="app" title="합본 검수" allow="clipboard-read; clipboard-write; fullscreen"></iframe>
+<script>
+(function(){
+  var EXEC='https://script.google.com/macros/s/AKfycbwxGzIiHAMsv_A2qtm9fmSyn7kWAFbBgrvHCB6G3UmUlBHduJj89OGGI-T6hP70ke_6cg/exec';
+  var q=location.search||'';
+  document.getElementById('app').src=EXEC+q;
+  // 확인표(gt)는 한 번만 쓰므로 주소창에서 지운다
+  if(q.indexOf('gt=')>-1){try{history.replaceState(null,'',location.pathname)}catch(e){}}
+})();
+</script>
+</body></html>
